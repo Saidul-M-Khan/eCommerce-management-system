@@ -1,4 +1,8 @@
 
+**Declaimer: I have done this project during my Introduction to Database course at my University. This is a simple project based on the basic knowledge of Database and Oracle SQL. I have implemented this project in Oracle Database 10g.**
+
+![](https://i.imgur.com/lMWqqJG.jpg)
+
 # Introduction
 
 E-commerce Management System is an application, refers to the buying and selling of goods or services online, and the transfer of money and data to execute these transactions. For the peoples, it is making life easier. For the management point of view, the admin will able to control the E-commerce system by having all the reports to hand and able to see the records of each customers.
