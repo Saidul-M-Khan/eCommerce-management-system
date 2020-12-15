@@ -1,5 +1,5 @@
 
-**Disclaimer: I have done this project during my Introduction to Database course at my University. This is a simple project based on the basic knowledge of Database and Oracle SQL. I have implemented this project in Oracle Database 10g. I apologize if there is any mistake in my project. Let me know to fix the issue.
+**Disclaimer: I have done this project during my Introduction to Database course at my University. This is a simple project based on the basic knowledge of Database and Oracle SQL. I have implemented this project in Oracle Database 10g. I apologize if there is any mistake in my project. Let me know the mistakes so that I can fix the issue.
 Please do not copy that for your own project. You can take a idea from it and make a better one. This is for educational purpose.**
 
 ![](https://i.imgur.com/lMWqqJG.jpg)
