@@ -814,7 +814,7 @@ select \* from admin
 
 ![](https://i.imgur.com/EURdSIP.jpg)
 
-1. **address**
+2. **address**
 
 INSERT INTO address (address\_id, admin\_email, admin\_address) VALUES (01, &#39;admin@gmail.com&#39;, &#39;Dhaka,Bangladesh&#39;);
 
@@ -822,7 +822,7 @@ select \* from address;
 
 ![](https://i.imgur.com/m6K6rWi.jpg)
 
-1. **product**
+3. **product**
 
 INSERT INTO product (product\_id, product\_name, product\_type, admin\_id) VALUES (001, &#39;Android Mobile&#39;, &#39;Gadget&#39;, &#39;admin&#39;);
 
@@ -848,7 +848,7 @@ select \* from product;
 
 ![](https://i.imgur.com/rcwJfSZ.jpg)
 
-1. **category**
+4. **category**
 
 INSERT INTO category (category\_id, category\_name) VALUES (011, &#39;Mobile Phone&#39;);
 
@@ -874,7 +874,7 @@ select \* from category;
 
 ![](https://i.imgur.com/6Q61s2l.jpg)
 
-1. **pcid**
+5. **pcid**
 
 INSERT INTO pcid (product\_id, category\_id) VALUES (001, 011);
 
@@ -900,7 +900,7 @@ select \* from pcid;
 
 ![](https://i.imgur.com/nRDinD1.jpg)
 
-1. **brand**
+6. **brand**
 
 INSERT INTO brand (brand\_id, brand\_name) VALUES (111, &#39;Samsung&#39;);
 
@@ -926,7 +926,7 @@ select \* from brand;
 
 ![](https://i.imgur.com/3uLypHu.jpg)
 
-1. **cbid**
+7. **cbid**
 
 INSERT INTO cbid (category\_id,brand\_id) VALUES (011, 111);
 
@@ -952,7 +952,7 @@ select \* from cbid;
 
 ![](https://i.imgur.com/6TsENYc.jpg)
 
-1. **customer**
+8. **customer**
 
 INSERT INTO customer (customer\_id, customer\_name, customer\_address, customer\_phone\_no, customer\_username, customer\_password) VALUES (&#39;masufian&#39;, &#39;Md Abu Sufian&#39;, &#39;Uttara, Dhaka&#39;, &#39;01700000011&#39;, &#39;masufian&#39;, &#39;abc&#39;);
 
@@ -978,7 +978,7 @@ select \* from customer;
 
 ![](https://i.imgur.com/GGGvpi5.jpg)
 
-1. **wishlist**
+9. **wishlist**
 
 INSERT INTO wishlist (wishlist\_id, product\_id, customer\_id) VALUES (121, 001, &#39;masufian&#39;);
 
@@ -1004,7 +1004,7 @@ select \* from wishlist;
 
 ![](https://i.imgur.com/uLNNLk8.jpg)
 
-1. **product2**
+10. **product2**
 
 INSERT INTO product2 (product\_id, product\_name, product\_type, customer\_id) VALUES (001, &#39;Android Mobile&#39;, &#39;Gadget&#39;, &#39;masufian&#39;);
 
@@ -1030,7 +1030,7 @@ select \* from product2
 
 ![](https://i.imgur.com/zKdqVSk.jpg)
 
-1. **Cart**
+11. **Cart**
 
 INSERT INTO cart (cart\_id, product\_id, serial\_id, customer\_id, pq\_id) VALUES (131, 001, 141, &#39;masufian&#39;, 151);
 
@@ -1056,7 +1056,7 @@ select \* from cart;
 
 ![](https://i.imgur.com/GDIRJCq.jpg)
 
-1. **pqid**
+12. **pqid**
 
 INSERT INTO pqid (pq\_id, price, quantity, total\_cost) VALUES (151, 20000, 01, 20000);
 
@@ -1082,7 +1082,7 @@ select \* from pqid
 
 ![](https://i.imgur.com/mYTawWf.jpg)
 
-1. **payment**
+13. **payment**
 
 INSERT INTO payment (payment\_id, card, amount, customer\_id, cash\_on\_delivary) VALUES (5551, 21541202, 20000, &#39;masufian&#39;, &#39;No&#39;);
 
@@ -1108,7 +1108,7 @@ select \* from payment;
 
 ![](https://i.imgur.com/3AC0CRl.jpg)
 
-1. **order1**
+14. **order1**
 
 INSERT INTO order1 (order\_id, total\_cost, product\_id, date\_of\_order, customer\_id) VALUES (0101, 20000, 001, DATE &#39;2020-11-22&#39;, &#39;masufian&#39;);
 
@@ -1134,7 +1134,7 @@ select \* from order1;
 
 ![](https://i.imgur.com/w1moTd5.jpg)
 
-1. **product3**
+15. **product3**
 
 INSERT INTO product3 (product\_id, product\_name, product\_type, cart\_id) VALUES (001, &#39;Android Mobile&#39;, &#39;Gadget&#39;, 131);
 
@@ -1160,7 +1160,7 @@ select \* from product3;
 
 ![](https://i.imgur.com/6OMHm0w.jpg)
 
-1. **order2**
+16. **order2**
 
 INSERT INTO order2 (order\_id, total\_cost, product\_id, date\_of\_order, cart\_id) VALUES (0101, 20000, 001, DATE &#39;2020-11-22&#39;, 131);
 
@@ -1186,7 +1186,7 @@ select \* from order2;
 
 ![](https://i.imgur.com/EgijnLu.jpg)
 
-1. **payment2**
+17. **payment2**
 
 INSERT INTO payment2 (payment\_id, card, amount, order\_id, cash\_on\_delivary) VALUES (5551, 21541202, 20000, 0101, &#39;No&#39;);
 
@@ -1224,7 +1224,7 @@ Print the product id, product names, product type from product table where produ
 
 select product\_id, product\_name, product\_type from product where product\_name = (select product\_name from product2 where product\_id=1);
 
-![](RackMultipart20201215-4-1hm1gx0_html_b48789e27fff5a2d.jpg)
+![](https://i.imgur.com/7SmegmK.jpg)
 
 **2-Q:**
 
@@ -1234,7 +1234,7 @@ Print product id, product name, product type and cart id for cart id 131.
 
 SELECT product\_id, product\_name, product\_type FROM product3 WHERE cart\_id = (SELECT cart\_id FROM cart WHERE cart\_id =&#39;131&#39;);
 
-![](RackMultipart20201215-4-1hm1gx0_html_1def58c8924afaef.jpg)
+![](https://i.imgur.com/BzDlWvy.jpg)
 
 **3-Q:**
 
@@ -1244,9 +1244,9 @@ Print order id, total cost, product id, date of order, cart\_id from order2 tabl
 
 SELECT order\_id, total\_cost, product\_id, date\_of\_order, cart\_id FROM order2 WHERE total\_cost \&gt; (SELECT AVG(total\_cost) FROM order2 WHERE date\_of\_order=to\_date(&#39;2020-11-26&#39;, &#39;YYYY-MM-DD&#39;));
 
-![](RackMultipart20201215-4-1hm1gx0_html_67f639b07e7917c.jpg)
+![](https://i.imgur.com/c4FGd7F.jpg)
 
-1. **Joining**
+2. **Joining**
 
 **1-Q:**
 
@@ -1256,7 +1256,7 @@ Print the admin name and admin address id by joining admin table and address tab
 
 SELECT a.admin\_name &quot;Admin Name&quot;, ad.address\_id &quot;Admin Address ID&quot; FROM admin a, address ad WHERE a.address\_id = ad.address\_id;
 
-![](RackMultipart20201215-4-1hm1gx0_html_2d860e9b8d11d0e7.jpg)
+![](https://i.imgur.com/pFWO1Hz.jpg)
 
 **2-Q:**
 
@@ -1266,7 +1266,7 @@ Print the customers name for customer id masufian, smkhan and aira
 
 SELECT cname.customer\_name FROM customer cname, customer cid WHERE cname.customer\_id = cid.customer\_id AND cname.customer\_id in(&#39;masufian&#39;, &#39;smkhan&#39;, &#39;aira&#39;);
 
-![](RackMultipart20201215-4-1hm1gx0_html_124f761c67e258dd.jpg)
+![](https://i.imgur.com/DpaQfp8.jpg)
 
 **3-Q:**
 
@@ -1276,9 +1276,9 @@ Print the customer id and count the order id from order1 table and join the cust
 
 SELECT customer\_id, COUNT( order\_id ) FROM order1 INNER JOIN customer USING(customer\_id) GROUP BY customer\_id ORDER BY customer\_id;
 
-![](RackMultipart20201215-4-1hm1gx0_html_b3f37ed81aa9452f.jpg)
+![](https://i.imgur.com/yAjJyea.jpg)
 
-1. **Group Function**
+3. **Group Function**
 
 **1-Q:**
 
@@ -1288,7 +1288,7 @@ Find average, maximum, minimum salary of the pqid.
 
 select avg(price) as average,max(price) as maximum,min(price) as minimum from pqid;
 
-![](RackMultipart20201215-4-1hm1gx0_html_d265fe39a8c75592.png)
+![](https://i.imgur.com/8LmivpA.jpg)
 
 **2-Q:**
 
@@ -1298,7 +1298,7 @@ Display the maximum amount of payment2
 
 select max(amount) from payment2;
 
-![](RackMultipart20201215-4-1hm1gx0_html_6a51f718a5e829e2.png)
+![](https://i.imgur.com/YPamrpZ.jpg)
 
 **3-Q:**
 
@@ -1308,9 +1308,9 @@ Find the number of customer who have payment \&lt;3570
 
 select count(customer\_id) from payment where amount\&lt;3570;
 
-![](RackMultipart20201215-4-1hm1gx0_html_6e352ea15594afe7.png)
+![](https://i.imgur.com/VqC6TZI.jpg)
 
-1. **Single row function**
+4. **Single row function**
 
 **1-Q:**
 
@@ -1320,9 +1320,9 @@ print product, total price from order2 table and print the total cost in asendin
 
 select product\_id &quot;Product ID&quot;, TRUNC(total\_cost) &quot;Total Price&quot; from order2 order by total\_cost asc
 
-![](RackMultipart20201215-4-1hm1gx0_html_2d4f9a02b29a43.jpg)
+![](https://i.imgur.com/IXv5qiN.jpg)
 
-1. **View**
+5. **View**
 
 **1-Q:**
 
@@ -1334,9 +1334,9 @@ CREATE VIEW customer\_view AS
 
 SELECT c.customer\_id &quot;Customer ID&quot;, c.customer\_name &quot;Customer Name&quot;, c.customer\_phone\_no &quot;Phone Number&quot;, c.customer\_address &quot;Address&quot; FROM customer c;
 
-![](RackMultipart20201215-4-1hm1gx0_html_febe21584c147771.jpg)
+![](https://i.imgur.com/W8seb4g.jpg)
 
-# Sequence
+6. **Sequence**
 
 - **Table(shipping) Create for sequence:**
 
