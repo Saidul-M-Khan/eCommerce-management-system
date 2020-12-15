@@ -73,13 +73,13 @@ No multivalued attribute.
 
 1. product\_id, product\_type, product\_name
 2. category\_id, category\_name
-3. **product\_id** , ** category\_id**
+3. **product\_id , category\_id**
 
 **3NF:**
 
 1. product\_id, product\_type, product\_name
 2. category\_id, category\_name
-3. **product\_id**** , **** category\_id**
+3. **product\_id , category\_id**
 
 No transitive dependency.
 
@@ -87,7 +87,7 @@ No transitive dependency.
 
 1. product\_id, product\_type, product\_name
 2. category\_id, category\_name
-3. **product\_id**** , **** category\_id**
+3. **product\_id , category\_id**
 
 **category**  **has**  **brand**
 
